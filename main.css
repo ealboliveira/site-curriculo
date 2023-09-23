@@ -1,0 +1,172 @@
+/* Reset de estilos para garantir uma base consistente */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para o cabeçalho */
+.title {
+    color: #333;
+}
+
+/* Estilos para o perfil */
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.profile_container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile_profileImg img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.profile_name {
+    font-size: 24px;
+}
+
+.profile_title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.profile_description {
+    font-size: 16px;
+}
+
+/* Estilos para habilidades, projetos, educação e experiência */
+.group-1,
+.group-2,
+.group-3 {
+    margin-bottom: 20px;
+}
+
+.skills_list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skills_list li {
+    margin-bottom: 5px;
+}
+
+.ref_item,
+.edu_item,
+.exp_item {
+    margin-bottom: 20px;
+}
+
+.item_preTitle {
+    font-weight: bold;
+}
+
+.item_title {
+    font-size: 18px;
+}
+
+.item_subtitle {
+    font-style: italic;
+}
+
+/* Estilos para interesses */
+.interest_items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.interest_item {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.interest_item i {
+    margin-right: 5px;
+}
+
+.group-3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.contact_info p {
+    margin-bottom: 10px;
+}
+
+.social {
+    flex: 1;
+}
+
+.social_items {
+    display: flex;
+    flex-direction: column;
+}
+
+.social_item {
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.social_item i {
+    margin-right: 5px;
+}
+
+/* Estilos para o rodapé */
+hr {
+    argin-top: 20px;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .profile_container {
+    flex-direction: column;
+    align-items: flex-start;
+    }
+
+    .profile_profileImg {
+    margin: 0 0 20px 0;
+    } 
+}
